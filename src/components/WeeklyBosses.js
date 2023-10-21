@@ -10,7 +10,7 @@ function WeeklyBosses({ removeBoss, handleCheck, weeklyBosses, setWeeklyBosses }
             const now = new Date();
             const dayOfWeek = now.getUTCDay(); // 0 (Sunday) to 6 (Saturday)
             if (dayOfWeek === 3 && now.getUTCHours() === 0 && now.getUTCMinutes() === 0) { // Check if it's Wednesday
-                setWeeklyBosses(weeklyBosses.map(boss => ({ ...boss, done: false })));
+                setWeeklyBosses(weeklyBosses.map(boss => ({ ...boss, done: false }))); 
             }
         }, 60000); // Check every minute
         return () => clearInterval(interval);
