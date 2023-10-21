@@ -1,0 +1,47 @@
+.card{
+    max-width: 345px;
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.CardContent {
+    text-align: center;
+
+}
+.cardFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteIcon {
+    cursor: pointer;
+    margin: 10px;
+    font-size: 24px;
+}
+
+.bigCheckbox {
+    transform: scale(1.5);
+    /* adjust as needed */
+}
+
+.bossSelectForm {
+    margin-bottom: 10px;
+}
+
+.progressBar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 15px;
+    width: 100%;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
